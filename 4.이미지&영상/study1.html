@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지&비디오태그</title>
+</head>
+<body>
+    <h1>이미지태그</h1>
+    <p>이미지 파일을 연결해서 홈페이지에 보여주는 역할을 하는 태그</p>
+    <p>src속성에 이미지파일까지의 경로를 입력하여 작성한다</p>
+    <img src="./img/popup1.png" alt="블랙프라이데이">
+    <!-- img + tab 누르면 자동으로 연결 태그들 나옴 -->
+    <!-- alt는 대체텍스트임 / 사진을 설명해주는 용도 (이미지가 안나올때) -->
+    <p>연결가능형태 = jpg,png,gif,svg</p>
+    <p>이미지태그는 일반적인 텍스트 글자와 같은 컨텐츠로 취급한다. 우리가 글자를
+        읽고 해석한 뒤 제목이라는 문맥 혹은 설명이라는 문맥으로 결정하듯이 이미지로
+        전체적인 맥락안에서 제목 또는 설명 컨텐츠로 구분될 수 있다</p>
+    <h1><a href="https://www.naver.com/" alr="네이버로고" target="_blank"><img src="./img/naver logo.png" alt="네이버로고"></a></h1>
+    <hr>
+    <h1>비디오태그</h1>
+    <p>비디오파일을 연결해서 화면에 보여주는 태그</p>
+    <p>비디오파일은 브라우저와 호완성이 완벽하지 않아서 mp4파일(거의 대부분 호환가능쓰)
+        외 다른파일은 호환 문제 있음당
+    </p>    
+    <video src="../4.이미지&영상/video/-152740.mp4" controls autoplay muted loop poster="./img/popup1.png"></video>
+    <!-- 속성이름과 속성값이 같으면 속성값을 안적어도 된다 (기본적으로 controls 입력 안하면 재생 안됨)
+        ex) controls="controls" 면 뒷 속성감 안적어도 됨,
+        muted라는 속성어를 넣어야 영상은 자동재생된다 / loop를 넣으면 계속 재생
+    poster에 경로는 썸네일 이미지를 넣어줄 수 있다, 썸네일 있어야할때는 
+    오토플레이/뮤트/루프 지워줘야함-->
+    <hr>
+    <p>비디오태그의 마침태그가 있는 이유는 자식태그로 source태그를 구성하여 여러가지 
+        형태의 비디오 타입을 수용할 수 있게 할려고 하는검당</p>
+    <p>비디오 태그는 자식태그 source태그를 위에서 아래로 탐색해나가면서 
+        해당 브라우저와 호환되는 영상을 플레이함</p>    
+    <video controls>
+        <source src="./video/video.webm" type="video/webm">
+        <source src="./video/video.mp4" type="video/mp4">
+    </video>
+    <!-- source태그는 마침태그 없음 
+    소스테그를 활용하면 호환이 되는 파일이 재생된다(각 브라우저마다 상이)-->
+    <hr>
+    <h1>유투브영상 홈페이지에 사용하기</h1>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/nDStvcvu6Nw" title="RALPH LAUREN | Spring 2023 Collection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
