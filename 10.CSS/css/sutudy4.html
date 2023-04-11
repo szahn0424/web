@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    [for]{color:blue}
+    [checked]+label{font-weight:bold;color:red}
+    [class="box"]{border:1px solid red}
+    input[type="text"]{boackground:red;color:white}
+    ol>li:nth-of-type(1){color:lime;background:black}
+    ol>li:last-of-type{color:red}
+    ol>li:nth-of-type(3n+2){border:2px solid yellow}
+
+</style>
+<body>
+    <div class="box">
+        <h2>속성선택자</h2>
+        <p>태그가 갖고있는 속성을 사용하여 선택자를 구성할 수 있따</p>
+        <form action="#">
+            <label for="username">이름</label>
+            <input type="text" id="username">
+            <label for="userpw">비밀번호</label>
+            <input type="password" id="userpw">
+            <input type="chackbox" checked id="like1">
+            <label for="like1">자동로그인하기</label>
+        </form>
+    </div>
+    <div class="box">
+        <h2>순번선택자</h2>
+        <p>태그가 갖고있는 순서를 이용하여 선택할 수 있다</p>
+        <p>태그명 : nth-or-type() 괄호안에 수식/절대값을 입력하여 선택할 수 있다</p>
+        <ol>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+        </ol>
+    </div>
+</body>
+</html>

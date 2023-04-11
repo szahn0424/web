@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표</title>
+</head>
+<body>
+    <h1>표-table</h1>
+    <p>table태그를 구성하면 보이지 않는 표공간이 생성됨</p>
+    <p>table태그 안에서 컨텐츠를 입력하는 방법은 가로 행 row 을 먼저 만들고 행안에 왼쪽부터 셀들을 입력하면 된다</p>
+    <p>이때입력하는 셀들이 일반 내용셀이라면 td태그로 사용하고 제목 셀이라면 th테그를 사용함</p>
+    <h2>셀 병합</h2>
+    <p>병합이 시작되는 셀을 찾아서 가로병합(colspan)세로병합(rowspan)속성을 가용한다. 이때 소성에 적용되는 값은 병합하는 셀의 개수를 숫자로 입력한다. 그리고 병합이 되어져서 사라지는 셀은 태그를 지워준다</p>
+
+
+    <table border="1" cellspacing="0">
+        <caption>대표시간표</caption>
+        <!-- 캡션(caption)은 표의 제목을 입력하는 것이다 (입력안해도무관)-->
+        <tr>
+            <th></th>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+        </tr>
+        <tr>
+            <th rowspan="2">오전</th>
+            <td>출근</td>
+            <td>출근</td>
+            <td colspan="2">출근</td>
+            <td>출근</td>
+        </tr>
+        <tr>
+
+            <td colspan="3">휴무</td>
+       
+        
+            <td colspan="2">휴무</td>
+
+            <!--가로병합 colspan / 세로병합 rowspan 후 병합되어야할칸의 내용을 지워줘야함 -->
+
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>코스닥선물 투자자별 매매동향</caption>
+        <tr>
+            <th rowspan="2">구분</th>
+            <th colspan="3">매매수량</th>
+            <th colspan="3">매도수량</th>
+            <th rowspan="2">합계</th>
+            <th rowspan="2">순매수</th>
+        </tr>
+        <tr>
+
+            <th>신규</th>
+            <th>환매</th>
+            <th>소계</th>
+            <th>신규</th>
+            <th>환매</th>
+            <th>소개</th>
+
+
+        </tr>
+        <tr>
+            <th>선물회사</th>
+            <td>47</td>
+            <td>6</td>
+            <td>53</td>
+            <td>6</td>
+            <td>42</td>
+            <td>48</td>
+            <td>101</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>증권회사</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+        </tr>
+
+         
+    </table>
+</body>
+</html>
