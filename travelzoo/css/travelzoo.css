@@ -1,0 +1,92 @@
+*{
+    margin: 0; padding: 0;
+    margin-bottom: 2px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size:12px;
+
+}
+
+.chek{background-color: rgb(247, 243, 243); padding: 5px;}
+ul{list-style: none;}
+h2{font-size: 20px;}
+
+.top{width:820px;
+margin: 0 auto;
+margin-top: 25px;}
+
+.main{
+    width:820px;
+    background:transparent;
+    margin:0 auto;
+    margin-top: 20px;
+
+}
+
+.main>div{float:left;}
+
+.main:after{content:"";display:block;
+    clear:both;}
+
+.main .menu1{width:260px;}
+.main .menu2{width:260px; margin-left: 20px;}
+.main .menu3{width:260px;margin-left: 20px;}
+.img1{float: left;}
+.txt1{margin-left: 60px;}
+.img1:after{content:"";display:block;clear:both;}
+.txt1:after{content:""; display:block;clear:both;}
+
+.img2{float: left;}
+.txt2{margin-left: 60px;}
+.img2:after{content:"";display:block;clear:both;}
+.txt2:after{content:""; display:block;clear:both;}
+
+.img3{float: left;}
+.txt3{margin-left: 60px;}
+.img3:after{content:"";display:block;clear:both;}
+.txt3:after{content:""; display:block;clear:both;}
+
+.img4{float: left;}
+.txt4{margin-left: 60px;}
+.img4:after{content:"";display:block;clear:both;}
+.txt4:after{content:""; display:block;clear:both;}
+
+.img5{float: left;}
+.txt5{margin-left: 60px;}
+.img5:after{content:"";display:block;clear:both;}
+.txt5:after{content:""; display:block;clear:both;}
+
+.img6{float: left;}
+.txt6{margin-left: 60px;}
+.img6:after{content:"";display:block;clear:both;}
+.txt6:after{content:""; display:block;clear:both;}
+
+.img7{float: left;}
+.txt7{margin-left: 60px;}
+.img7:after{content:"";display:block;clear:both;}
+.txt7:after{content:""; display:block;clear:both;}
+
+.img8{float: left;}
+.txt8{margin-left: 60px;}
+.img8:after{content:"";display:block;clear:both;}
+.txt8:after{content:""; display:block;clear:both;}
+
+.img9{float: left;}
+.txt9{margin-left: 60px;}
+.img9:after{content:"";display:block;clear:both;}
+.txt9:after{content:""; display:block;clear:both;}
+
+.img10{float: left;}
+.txt10{margin-left: 60px;}
+.img10:after{content:"";display:block;clear:both;}
+.txt10:after{content:""; display:block;clear:both;}
+
+.bottom{width:820px; margin: 0 auto;
+    background:rgb(247, 243, 243);}
+
+
+.bottom:after{content:""; display:block; clear:both;}
+
+
+
+
+

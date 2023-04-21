@@ -1,0 +1,43 @@
+*{
+ font-family:'times new roman';
+ font-size:14px;
+ background-color:ivory;
+ width:900px;
+ margin:0; padding:0
+}
+
+
+.box0>h1{
+    color:white;
+    font-size:50px;
+    border-top:3px solid red;
+    border-bottom:3px solid red; 
+    background-color:green;
+}
+.box1>h1{
+    font-size:30px;
+    border-bottom:3px solid red; 
+    background-color:orange;
+}
+.box2>h1{
+    font-size:30px;
+    border-bottom:3px solid red;
+    background-color:orange; 
+}
+.box3>h1{
+    font-size:30px;
+    border-bottom:3px solid red;
+    background-color:orange; 
+}
+
+hr{
+    border:2px solid red; 
+}
+.box4{
+    /* border:1px solid red; */
+    width:auto;
+    height:150px;
+    margin:0 auto;
+    background-position:right;
+    background:url(../cosmo/images/dream.jpg) no-repeat right 
+}

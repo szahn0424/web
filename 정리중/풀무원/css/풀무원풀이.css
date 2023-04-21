@@ -1,0 +1,31 @@
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+a{text-decoration:none;color:inherit;}
+strong,b{font-weight:normal;}
+i,em,address{font-style:normal;}
+
+
+
+html{
+    font-size:20px;
+    font-family: 'Noto Sans KR', sans-serif;}
+
+.container{
+
+    border:1px solid transparent;
+    width:980px;
+    margin:0 auto;}
+
+.container>h2{font-weight:600;
+margin-bottom:35px;margin-top: 40px;
+font-size:22px;}
+
+.container p{margin-bottom:35px;}
+.container .mb100{margin-bottom:100px;}
+.container .sign{margin-top:70;margin-bottom:35px;
+font-size: 30px; font-family:풀무원폰트;}
+
+@font-face{
+    font-family:풀무원폰트;
+    src:url("../PulmuoneLOHASBold.ttf")
+}

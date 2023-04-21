@@ -1,0 +1,45 @@
+*{margin:0; padding:0;}
+
+.parent{width:700px;
+background:pink;
+margin:0 auto;
+border:5px solid aqua;
+/* height:400px;} */
+}
+
+.a{
+    width:200px;
+    height:200px;
+    background:red;
+    float: left;
+    overflow: hidden;
+
+}
+
+.b{
+    width:200px;
+    height:300px;
+    background:blue;
+    float: right;
+
+}
+.c{
+    width:200px;
+    height:400px;
+    background:green;
+    float: left;
+
+}
+.parent:after{
+    content:"clearbox";
+    display:block;
+    clear:both;
+}
+
+/* .clear{clear:both; */
+    /* background: lime; */
+/* } */
+
+.nextp{
+    border:20px solid yellow;
+}

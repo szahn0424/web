@@ -1,0 +1,65 @@
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+a{text-decoration:none;color:inherit;}
+strong,b{font-weight:normal;}
+i,em,address{font-style:normal;}
+
+@font-face {
+    font-family:풀무원;
+    src: url(../../풀무원/PulmuoneLOHASBold.ttf);
+}
+
+html{
+    font-size:20px;
+    font-family:'Noto Sans KR', sans-serif;}
+
+.container{
+    border:1px solid transparent;
+    width:1920px;
+    margin:0 auto;
+    background-position:center;
+    background:url(../예제2/sub_vis01_02.jpg) no-repeat top}
+
+.container2{
+    border:1px solid transparent;
+    width:1200px;
+    margin:0 auto;}
+
+.container3{
+    border:1px solid transparent;
+    width:810px;
+    margin:0 auto;
+background-color:rgb(236, 236, 236);
+margin-bottom:50px;}
+
+.box1 span{background-color: white;
+    padding-right:18px;}
+.box1{margin-top:270px; margin-bottom:50px;
+font-size:30px; text-align: left;
+background-image:url(../예제2/sub_tit_line.gif);
+background-repeat:repeat-x;
+background-position:0 50%;
+}
+
+h1{font-size:52px;
+    margin-left:90px;
+    margin-right:90px;
+    font-family:풀무원;
+margin-bottom:50px;
+text-align: center;}
+
+
+h3{font-size:35px;
+font-family:풀무원;
+margin-left:90px;
+margin-right:90px;
+margin-bottom:25px;
+margin-top:40px;
+text-align: center;}
+
+p{margin-left:90px;
+ margin-right:90px;
+ margin-bottom:50px;
+text-align: center;}
+
+span{color: rgb(15, 207, 15);}

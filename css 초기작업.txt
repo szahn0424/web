@@ -1,0 +1,19 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+/* 공통스타일 */
+html{font-size: 12px; font-family: 'Noto Sans KR', sans-serif;}
+
+/* 레이아웃(대략적인것-큰영역->작은영역) */
+
+.container{border:1px solid transparent; width:820px;
+margin: 0 auto;}
+header{margin-bottom: 16px; border-bottom:3px solid rgb(107, 107, 192);}
+main{border:1px solid transparent; margin-bottom: 50px;}
+footer{}
