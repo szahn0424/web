@@ -1,0 +1,386 @@
+@media (max-width:768px){
+
+    /* 해더임당 */
+    .pc{display: none;}
+    header.mo{
+
+        position: fixed;
+        left:0;
+        top:0;
+        width:100%;
+        height: 54px;
+        z-index: 1000;
+    }
+
+    .innerHeader{
+        width:90%;
+        height:100%;
+        margin: 0 auto;
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* vw란 상대단위이다 화면너비에 대한 비율이기 때문에 90%대신 90vw로 입력해도 된다. 하지만 vw를 %로 바꿀순 없음(부모에 대한 너비로 바뀌기 때문에)
+    vw는 항상 340에 대한(화면너비)단위이다 */
+    .btnMoMenu{
+ 
+        width:6.4vw;
+        height:6.4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+
+    /* 좌측 메뉴 아이콘 만들기- span태그 */
+    .btnMoMenu>span{
+        width:100%;
+        height:2px;
+        background: white;
+        display: block;
+        margin: 3px 0;
+    } 
+
+
+    .btnMenuLang{
+    
+        width:6.4vw;
+        height:6.4vw;
+    }
+
+    .btnMenuLang img{
+        width:100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .moLogo{
+        width:31.47vw;
+        max-width:230px;
+
+        /* max=width=>더이상 커지지안도록 최대크기를 지정해줌 */
+
+    }
+
+    .moLogo a img{
+        width:100%;
+    }
+
+    /* 모바일 메뉴 영역 */
+
+    .moMenu{
+        position:fixed;
+        width:100%;
+        height: 100%;
+        left:0;
+        top:0;
+        z-index: 2000;
+        pointer-events: none;
+        /* 아래 영역잡히도록 포인터를 none으로 해줌 */
+    }
+
+    .moMenu.show .blackcover{
+        opacity:0.8;
+        pointer-events: auto;
+    }
+
+    .blackcover{
+        width:100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        position: absolute;
+        left:0;
+        top:0;
+        transition: all 0.5s ease 0s;
+        pointer-events:none;
+    }
+
+    .moGnb{
+        background: white;
+        position: absolute;
+        left:0;
+        top:0;
+        width:75%;
+        height:100%;
+        max-width: 310px;
+        min-width: 290px;
+        transform: translateX(-100%);
+        transition: all 0.5s ease 0.1s;
+        /* overflow: auto; */
+    }
+
+    .moMenu.show .moGnb{
+        transform: translateX(0%);
+    }
+
+    .logoMo{
+     
+        width:31.47vw;
+        max-width:230px;
+        margin: 0 auto;
+        margin-top: 22px;
+        margin-bottom: 42px;
+    }
+
+    .logoMo img{
+        width:100%;
+    }
+
+
+
+    .mobileMenuList ul{
+        /* display: none; */
+      
+        margin-top: 14px;
+        padding-left: 10px;
+    } 
+    .mobileMenuList ul>li{
+        color:#777;
+        font-weight: 400;
+
+        margin-bottom: 8px;
+    }
+
+    .mobileMenuList ul>li:last-of-type{
+        margin-bottom: 0;
+    }
+    .mobileMenuList>li>a{
+ 
+        display: block;
+        padding: 12px;
+    }
+    
+    .mobileMenuList{
+
+        width:88%;
+        margin: 0 auto;
+        height:calc(100% - 130px);
+        overflow:auto;
+    }
+
+    .mobileMenuList>li{
+        border-bottom:1px solid #ccc;
+        padding:12px;
+        font-size:1.12rem;
+        font-weight: bold;
+        position:relative;
+
+    }
+    .mobileMenuList>li:after{
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        right: 17px;
+        top: 11px;
+        border: 1px solid #0000006b;
+        border-right: none;
+        border-top: none;
+        transform: rotate(-45deg);
+    }
+
+    /* after태그는 항상 content:""으로 빈문자를 넣어준다 부모태그한텐 포지션-렐러티브 /적용될 테그엔 포지션-앱솔루트 */
+
+
+    /* 해더끗 */
+
+    main{position: relative;}
+    
+    .videobanner{
+        height:60vh; 
+        position:relative}
+    /* 100vh는 무조건 전체 화면! */
+    .videobanner video{width: 100%; height: 100%; object-fit: cover;}
+    
+    .videobanner:after{content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:black;opacity: 0.2;}
+    
+    /* after보다 앞으로 오려면 z index를 조절해야함 (레이어 옮기듯..)*/
+    
+    .videobanner>.flbox{
+        /* border:1px solid lightgreen; */
+        position: absolute;
+        left:50%; top:50%;
+        transform:translateX(-50%)translateY(-50%);
+        z-index:10; text-align: center;
+        width:74vw;
+    }
+    
+    /* text align -center로 자세히보기도 가운데정렬해준다 */
+    
+    .flbox>h2{margin-bottom: 50px;}
+    .flbox>h2 img{
+        width:100%;
+    }
+    .flbox>a{
+    padding:3vw 13vw; background: rgba(255, 255, 255, 0.375);
+    display: inline-block;color: white; font-size: 1.2rem; border-radius: 4px;}
+    
+    /* 뉴스 컬쳐 노티스 */
+    
+    .news{width:90%; margin: 0 auto; margin-top: 60px; margin-bottom: 100px;}
+
+    .news ul{display: flex;
+        
+        /* display: flex; justify-content: space-between; */
+    
+    }
+    
+    .news>h3{font-size: 1.5rem;
+    margin-bottom: 10px;}
+    
+    /* .news ul>li{
+    
+        flex:1;
+        border-right: 1px solid rgb(225, 225, 225);}
+    
+    .news ul>li:last-of-type{border-right: none;padding-right: 0;} */
+    
+    .news .swiper-pagination {
+        position: relative;
+        margin-top: 49px;
+    }
+    
+    
+    .date{color: rgb(178, 178, 178);}
+    
+
+    /* 컬쳐부분 */
+
+    .culture{margin-top: 70px;width:100%; margin: 0 auto; }
+    .list{
+        margin-bottom: 70px;
+        /* height: 574px; */
+        /* display: flex; */
+    /* border:1px solid red;} */}
+    
+    .list>li{
+        /* flex: 1; */
+        position: relative;
+        overflow: hidden;}
+
+    .culture>ul>li{height:220px; margin-bottom: 1px;}
+
+    
+    .list>li>a>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter:grayscale(1)brightness(0.7);
+        transition: all 0.6s ease 0s;
+    }
+    
+    
+    .box1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+        top: 50%;
+        /* border: 1px solid blue; */
+        text-align: center;
+        color: white;
+    }
+    
+        
+    .box1>h4{font-size: 1.5rem; margin-bottom: 5px;
+        /* transition: all 0.5s ease 0s; */
+    }
+        
+        /* .list>li:hover h4{transform: translateY(-20px);} */
+        
+        .box1>p{
+            /* border:1px solid yellow;  */
+            padding-top: 20px;position: relative;
+            /* transition: all 0.5s ease 0s;opacity: 0; */
+        }
+        /* .list>li:hover p{opacity: 1;} */
+    
+        .box1>p:after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 30px;
+            background: white;
+        }
+        
+        
+    
+    
+    /* 노티스 부분 */
+    
+    
+    .notice{width:90%; margin: 0 auto; }
+
+    .notice .notice_pagenation{
+        position: relative;
+        margin-top: 20px;
+        /* border: 1px solid red; */
+    }
+    
+
+    
+    .notice>ul>li>a>img{width:100%; height:100%; object-fit:cover;}
+
+
+    span.swiper-pagination-bullet-active {
+        background: black;
+    }
+
+    /* .notice .swiper-pagination {
+        position: relative;
+        margin-top: 49px;
+    } */
+    
+    
+    
+    /* 푸터 */
+    
+    
+    footer{border-top: 1px solid rgb(210, 210, 210);}
+    
+    
+    .foomenu1{width:1440px; margin: 0 auto; margin-top: 40px;}
+    
+    .foomenu1>ul>li>ul>li{color:#777; }
+    
+    .foomenu1>ul{display: flex; justify-content:space-between;}
+    
+    .foomenu1>ul .font1{font-weight: 800; font-size: 1.2rem;}
+    
+    .foomenu2{margin-top: 30px; margin-bottom: 30px; border-bottom: 1px solid rgb(210, 210, 210);}
+    
+    .foomenu2>ul{width:1440px; margin: 0 auto; display: flex; justify-content:flex-start; font-weight: 800; font-size: 1.2rem;}
+    
+    .foomenu2>ul>li{
+        /* border:1px solid red; */
+        margin-right: 155px;
+        margin-bottom: 80px;}
+    
+    .blue{color: rgb(82, 82, 183);}
+    
+    .coinfo{margin-top:80px;height: 40px; width:1440px; margin: 0 auto; margin-bottom: 80px;display:flex; justify-content: space-between; align-items: center;}
+    
+    .coinfo>section{display: flex;}
+    
+    .copy{color: #777; margin-left: 10px;}
+    
+    .footlogo{margin-left: 37%;}
+    
+    .footlogo>h1>a>img{width: 120px; height: 20px;}
+    
+    .snsmenu>ul>li{font-size: 2rem;color: rgb(166, 166, 166); }
+    
+    .snsmenu>ul{display: flex; justify-content: space-between; }
+    
+    .snsmenu>ul>li{flex: 1; text-align:center; margin-right: 10px;}
+    
+    .snsmenu>ul>li:last-of-type{margin-right: 0;}
+    
+    /* .coinfo{border-top: 1px solid red; margin-top: 50px;} */
+}

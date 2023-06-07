@@ -1,0 +1,48 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+/* 공통스타일 */
+html{font-size: 12px; font-family: 'Noto Sans KR', sans-serif;}
+/* 공통스타일 끗*/
+
+.maintop{
+    width:100%;
+    background: #ffc845;}
+ 
+    
+.main{
+margin: 0 auto;
+width:1320px;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+/* border: 1px solid red;} */
+
+.main>ul{margin: 0 auto;
+    width:1320px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+    /* border: 1px solid red;} */
+
+.main>ul>li{
+    width:270px;
+    margin-right: 20px;
+    align-items: center;    }             
+    /* border: 1px solid red;} */
+
+.main>ul>li img{width:200px;
+margin-left: 30px;}
+
+h3{font-size: 20px;}
+p{margin-top: 10px;
+border-top: 1px solid black;}
+
+h1{font-size: 23px;}

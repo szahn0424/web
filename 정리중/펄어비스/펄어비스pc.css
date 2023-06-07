@@ -1,0 +1,234 @@
+@media (min-width:769px){
+
+    /* 레이아웃 */
+    
+    header{   
+        position:fixed; left: 0; top:0; width: 100%; color: white;z-index: 1000; height:70px; overflow:hidden;
+    transition: all 0.5s ease 0s;}
+    
+        /* overflow:hidden 해줘야 마우스 갈대만 펼쳐짐(안보이게 해주는 것) */
+    
+        /*z-인덱스 하면 뒷면 태그를 렐러티브 해야함 (main을 position: relative 해줘야함 */
+    
+         /* 픽스드, 앱솔루트 하면 left / top을 지정해줘야함! */
+         /* 상단 고정이 되야 하므로 position:fixed 입력 */
+    
+    header:hover{background: white; color:black; height: 300px;}
+    
+    .innerheader{width:1440px;margin: 0 auto; display: flex; justify-content: space-between; height:70px;align-items: center;}
+    
+    .innerheader>*{}
+    
+    .logo{width: 160px;}
+    
+    
+    /* 로고 자바 없이 색바꾸기 */
+    
+    .logo img{width:100%; display: none;}
+    .logo a{display:block;
+    width:160px;
+    height:26px; background: url(./pearlabyss/img/cm_bi_white.svg) no-repeat; background-size: contain;}
+    
+    header:hover .logo a{background: url(./pearlabyss/img/cm_bi_black.svg) no-repeat; background-size: contain;}
+    
+    /* 로고 자바 없이 색바꾸기 */
+    
+    header:after{content:""; position:absolute; left:0; top:70px; width:100%; height:1px; background: #ddd;}
+    
+    .lang{width: 160px;}
+    .gnb{width:800px;}
+    .gnb>ul{display: flex; height: 70px;}
+    
+    .gnb>ul>li{flex:1;text-align: center;position: relative; display: flex; justify-content: center; align-items: center;}
+    
+    .gnb>ul>li>a{font-weight: bold; font-size: 1.1rem;}
+    
+    .gnb>ul>li>ul{ position:absolute;left: 0; top: 70px; width:100%;padding-top:20px;color:#777;}
+    
+    .gnb>ul>li>ul>li{
+    margin-bottom: 10px;}
+    
+    .gnb>ul>li>ul>li:hover{color:black;}
+    
+    .gnb>ul>li>ul>li:last-of-type{margin-bottom: 0;}
+    
+    .lang>ul{display: flex; justify-content: space-between;}
+    
+    /* 짝대기 만들기 -> after이용 */
+    
+    
+    .lang>ul>li{flex: 1; text-align:center;position: relative;}
+    
+    .lang>ul>li:after{content: ""; 
+    position:absolute; right: 0; top:calc(50% - 5px); width:1px; height:10px; background: white;}
+    
+    .lang>ul>li:last-of-type:after{display: none;}
+    
+    
+    /* 짝대기 만들기 -> after이용 */
+    
+        
+    main{position: relative;}
+    
+    .videobanner{height: 780px; position:relative}
+    
+    .videobanner video{width: 100%; height: 100%; object-fit: cover;}
+    
+    .videobanner:after{content:""; position:absolute; left:0; top:0; width:100%; height:100%; background:black;opacity: 0.2;}
+    
+    /* after보다 앞으로 오려면 z index를 조절해야함 (레이어 옮기듯..)*/
+    
+    .videobanner>.flbox{
+        /* border:1px solid lightgreen; */
+        position: absolute;
+        left:50%; top:50%;
+        transform:translateX(-50%)translateY(-50%);
+        z-index:10; text-align: center;
+    }
+    
+    /* text align -center로 자세히보기도 가운데정렬해준다 */
+    
+    .flbox>h2{margin-bottom: 50px;}
+    .flbox>a{
+    padding:30px 110px; background: rgba(255, 255, 255, 0.375);
+    display: inline-block;color: white; font-size: 1.2rem; border-radius: 4px;}
+    
+    /* 뉴스 컬쳐 노티스 */
+    
+    .news{width:1440px; margin: 0 auto; margin-top: 50px;}
+
+    .news ul{display: flex; justify-content: space-between;}
+    
+    .news>h3{font-size: 1.5rem;
+    margin-bottom: 10px;}
+    
+    .news ul>li{
+        padding:0 30px;
+        /* flex:1; */
+        border-right: 1px solid rgb(225, 225, 225);}
+    
+    .news ul>li:last-of-type{border-right: none;padding-right: 0;}
+
+    .news .swiper-pagination {
+        position: relative;
+        border: 1px solid red;
+        margin-top: 49px;
+    }
+    
+    
+    .date{color: rgb(178, 178, 178);}
+    
+    .culture{margin-top: 70px;}
+    .list{width:1440px; margin: 0 auto; 
+        margin-bottom: 70px;
+        height: 500px;display: flex;
+    /* border:1px solid red;} */}
+    
+    .list>li{flex: 1;position: relative;overflow: hidden;}
+    
+    .list>li>a>img{
+    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter:grayscale(1)brightness(0.7);
+        transition: all 0.6s ease 0s;
+    }
+    
+    .list>li>a:hover img{filter: grayscale(0)brightness(1);transform: scale(1.2);}
+    
+    .box1{position: absolute;
+        left:50%; transform: translateX(-50%);
+        top:70%;
+        /* border: 1px solid blue; */
+        text-align: center; color: white;}
+    
+        
+    .box1>h4{font-size: 1.5rem; margin-bottom: 5px;
+        transition: all 0.5s ease 0s;}
+        
+        .list>li:hover h4{transform: translateY(-20px);}
+        
+        .box1>p{
+            /* border:1px solid yellow;  */
+            padding-top: 20px;position: relative;transition: all 0.5s ease 0s;opacity: 0;}
+        .list>li:hover p{opacity: 1;}
+    
+        .box1>p:after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 30px;
+            background: white;
+        }
+        
+        
+    
+    
+    
+    
+    
+    .notice{width:1440px; margin: 0 auto; }
+    
+    .notice>ul{display: flex; justify-content:space-between;
+    margin-bottom: 70px;}
+    
+    .notice>ul>li>a>img{width: 340px; height:200px; object-fit:cover;}
+    
+    
+    
+    /* 푸터 */
+    
+    
+    footer{border-top: 1px solid rgb(210, 210, 210);}
+    
+    
+    .foomenu1{width:1440px; margin: 0 auto; margin-top: 40px;}
+    
+    .foomenu1>ul>li>ul>li{color:#777; }
+    
+    .foomenu1>ul{display: flex; justify-content:space-between;}
+    
+    .foomenu1>ul .font1{font-weight: 800; font-size: 1.2rem;}
+    
+    .foomenu2{margin-top: 30px; margin-bottom: 30px; border-bottom: 1px solid rgb(210, 210, 210);}
+    
+    .foomenu2>ul{width:1440px; margin: 0 auto; display: flex; justify-content:flex-start; font-weight: 800; font-size: 1.2rem;}
+    
+    .foomenu2>ul>li{
+        /* border:1px solid red; */
+        margin-right: 155px;
+        margin-bottom: 80px;}
+    
+    .blue{color: rgb(82, 82, 183);}
+    
+    .coinfo{margin-top:80px;height: 40px; width:1440px; margin: 0 auto; margin-bottom: 80px;display:flex; justify-content: space-between; align-items: center;}
+    
+    .coinfo>section{display: flex;}
+    
+    .copy{color: #777; margin-left: 10px;}
+    
+    .footlogo{margin-left: 37%;}
+    
+    .footlogo>h1>a>img{width: 120px; height: 20px;}
+    
+    .snsmenu>ul>li{font-size: 2rem;color: rgb(166, 166, 166); }
+    
+    .snsmenu>ul{display: flex; justify-content: space-between; }
+    
+    .snsmenu>ul>li{flex: 1; text-align:center; margin-right: 10px;}
+    
+    .snsmenu>ul>li:last-of-type{margin-right: 0;}
+    
+    /* .coinfo{border-top: 1px solid red; margin-top: 50px;} */
+    
+.mo{display: none;}
+.moMenu{display: none;}
+
+    }
+    
+    /* 공통 이미지로 아이콘 넣어주기... after활용 */
+    

@@ -1,0 +1,119 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+/* 공통스타일 */
+html{font-size: 14px;}
+
+.container{
+    width:1040px;
+    margin:0 auto;
+}
+
+/* 레이아웃 */
+
+.container>h2{
+
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.moviechart{
+    /* border:1px solid red; */
+    display: flex;
+}
+
+
+.moviechart>li{
+    width:calc(20% - 30px);
+    /* border:1px solid blue; */
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.moviechart>li>figure>img{
+    width:100%;
+}
+.moviechart>li>figure{
+    /* border:1px solid blue; */
+    width:100%;
+    height:230px;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.moviechart>li>figure>span{
+    
+    /* border:1px solid blue; */
+    position:absolute;
+    left:10px; bottom:-14px;
+    color: white;
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: bold; 
+    z-index:10;   
+}
+
+.moviechart>li:hover>figure>span{display: none;
+
+}
+
+.moviechart>li:hover>figure:after{display: none;}
+
+.moviechart>li>figure:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(20deg, black, transparent);
+    left: 0;
+    top: 0;
+}
+
+.hidden{
+    position: absolute;
+    left: 0; top: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.moviechart>li:hover .hidden{display:flex;}
+
+
+.hidden>li{
+    width:65%;
+    text-align:center;
+    padding:8px 0;
+    margin:5px;
+    /* border:1px solid violet; */
+    border-radius: 7px;
+}
+
+.hidden>li:nth-of-type(1){
+    background: white;
+    color:black;
+}
+.hidden>li:nth-of-type(2){
+    background: rgb(215, 32, 93);
+    color:white;
+}
+.moviechart>li>h3{
+    /* border:1px solid blue; */
+    margin: 10px 0;
+    font-weight: bold;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

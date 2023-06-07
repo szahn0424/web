@@ -1,0 +1,138 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+/* 공통스타일 */
+html{font-size: 12px; font-family: 'Noto Sans KR', sans-serif;}
+
+/* 레이아웃 */
+
+header{border:1px solid transparent; width:1000px;
+    margin: 0 auto;}
+
+main{border:1px solid transparent; width:1000px;
+        margin: 0 auto;}
+
+footer{border:1px solid transparent; width:1000px;
+    margin: 0 auto;}
+
+
+header{border:1px solid transparent; display:flex; justify-content: space-between; align-items: center;}
+
+.logo{ border:1px solid transparent;} 
+
+.lnb{display:flex; border:1px solid transparent;
+justify-content: flex-end; 
+margin-bottom:20px;}
+
+.lnb>li{border:1px solid transparent; color: gray; text-transform: uppercase; font-size: 0.9rem;padding: 2px 8px;}
+
+.gnb{display: flex; border:1px solid transparent;
+    justify-items: flex-end;}
+
+.gnb>li{border:1px solid transparent; padding:10px 16px; font-size: 1.2rem; font-weight: bold; color:#333;}
+
+main{border:1px solid transparent;
+justify-content: space-between;}
+
+/* main>div>h2{font-size: 4rem; margin-top: 50px;
+margin-bottom: 50px; font-family:Georgia, 'Times New Roman', Times, serif; color: rgb(85, 70, 182);} */
+
+.bannertitle{font-size: 4rem; margin-top: 50px;
+    margin-bottom: 50px; font-family:Georgia, 'Times New Roman', Times, serif;background: linear-gradient(to right top, #A9BDF6, #4658AB);
+color:transparent;
+-webkit-background-clip: text;}
+
+.tabmenu{display: flex;  margin-bottom: 50px;
+border:1px solid transparent;
+width:400px;
+height:120px;
+position:relative;
+align-items: flex-start;
+}
+.tabmenu>dt{
+    border:1px solid transparent;
+    height:30px;
+    padding:0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tabmenu>dt:hover{
+    text-decoration: underline;
+    color: #2A377F;
+    font-size: 1.2rem;
+}
+
+.tabmenu>dd{
+    border:1px solid transparent;
+    position:absolute;
+    left:0;top:40px;
+    width:100%;
+    overflow:hidden;
+    display:none;
+}
+
+.tabmenu>dd>ul>li{display: flex; justify-content: space-between;}
+
+.tabmenu>dt.on+dd{display: block;}
+
+.tabmenu>li>span{display: flex; align-content: flex-end;
+}
+
+
+.contents{display: flex;  margin-bottom: 50px;
+    border:1px solid transparent;
+    width:700px;
+    height:120px;
+    position:relative;
+    align-items: flex-start;
+color: white;
+margin-top: 30px;}
+
+article{border:1px solid transparent;margin-right: 40px;}
+
+.box1{
+    border:1px solid transparent;
+width:200px;
+height:130px;
+display:flex;
+position: relative;
+align-items: flex-start;
+}
+.box1>dt{border:1px solid transparent;}
+.box1>dd{
+    position: absolute;
+    left: 0px;
+    top:20px;
+    display: none;
+}
+
+.box1>dd.dd1{display: block;}
+
+
+    
+
+footer{
+    border-top: 1px solid white; width:1000px;
+    padding-top: 10px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+justify-content: space-between;}
+
+
+
+.container1{
+   background-image: url(./img/bg_body.jpg);
+   background-repeat: repeat-x;
+   background-position: top center;, 
+
+}
+
+.container2{background-color: #2A377F}

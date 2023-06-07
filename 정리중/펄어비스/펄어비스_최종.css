@@ -1,0 +1,38 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+/* 공통스타일 */
+
+html{font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
+
+.blankstyle{}
+
+.blankstyle:after{
+    content:"";
+    width:12px; height:12px;
+    display: inline-block;
+    
+    margin-left: 4px;
+    background: url(./pearlabyss/img/icn_header_new_win.svg)no-repeat 50% 50%;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+

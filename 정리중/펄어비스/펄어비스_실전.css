@@ -1,0 +1,88 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+/* 공통스타일 */
+html{font-size: 12px; font-family: 'Noto Sans KR', sans-serif;}
+
+/* 영역구성 */
+
+.contents_wrap{
+    border:1px solid red;
+    margin: 0 auto;}
+
+header>*{border:1px solid blue;}
+
+header {width:1440px; margin: 0 auto; margin-top: 20px;
+    border: 1px solid red;
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+
+    transition: all 0.5s ease 0s;
+}
+.lang>ul{display:flex; justify-content: flex-end;}
+.lang>ul>li{padding-right: 5px;}
+
+header:hover{height: 122px;}
+
+.logo>h1>a>img{display:flex; border:1px solid red; width:170px; height:18px; background: black;
+justify-content: center; align-items: center;}
+
+.gnb>ul{display:flex; }
+
+.gnb>ul>li{border:1px solid green;
+    width:100px; position:relative;text-align: center;}
+
+.gnb>ul>li>ul{border:1px solid red;
+    position: absolute;}
+
+.news{width:1440px; margin: 0 auto; }
+.news>ul{display: flex; justify-content: space-between;}
+
+.news>h3{font-size: 1.5rem;
+margin-bottom: 10px;}
+.news>ul>li{border:1px solid red; padding-bottom:70px;}
+.date{color: rgb(178, 178, 178);}
+
+.culture{width:1440px; margin: 0 auto;}
+.culture>ul{display: flex; justify-content: flex-start;}
+
+.notice{width:1440px; margin: 0 auto; }
+
+.notice>ul{border:1px solid red; display: flex; justify-content:space-between;
+margin-bottom: 70px;}
+
+.notice>ul>li>a>img{width: 340px; height:200px; object-fit:cover;}
+
+footer{border-top: 1px solid rgb(210, 210, 210);}
+
+
+.foomenu1{width:1440px; margin: 0 auto; margin-top: 30px;}
+
+.foomenu1>ul{display: flex; justify-content:space-between;}
+
+.foomenu1>ul .font1{font-weight: 800; font-size: 1.2rem;}
+
+.foomenu2{width:1440px; margin: 0 auto;}
+
+.foomenu2>ul{display: flex; justify-content:space-between; font-weight: 800; font-size: 1.2rem;}
+
+.coinfo{margin-top:80px; width:1440px; margin: 0 auto; margin-bottom: 80px;border:1px solid red; display:flex; justify-content: center;}
+
+.coinfo>section{display: flex;}
+
+.footlogo>h1>a>img{width: 120px; height: 20px;}
+
+.snsmenu>ul>li{font-size: 2rem;color: grey; }
+
+.snsmenu{display:flex; justify-content:space-between; align-content:stretch;border:1px solid red;}
+
+.snsmenu>ul{display: flex;}

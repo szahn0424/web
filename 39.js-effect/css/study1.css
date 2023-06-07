@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;color:inherit;}
+ul,ol{list-style: none;}
+
+.wrap{}
+.wrap>section{
+    border:1px solid black;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.btnMenu{
+    border:1px solid black;
+    position: fixed;
+    right:10px;
+    top:10px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+nav{
+    border:1px solid red;
+    position: fixed;
+    left:0;
+    top:0;
+    width:300px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: lightgoldenrodyellow;
+    transform: translateX(-100%);
+    transition: all 0.7s ease 0s;
+}
+
+/* 아래처럼 온클래스를 붙혀서 나오는 효과를 준다
+ */
+
+nav.on{transform: translateX(0%);}
+
+.gnb{
+    /* border:1px solid blue; */
+}
+
+/* 안보이게하기 아래애ㅏㅐ라아아아래*/
+
+.gnb>li{
+    /* border: 1px solid red; */
+    height:50px;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+/* 안보이게하기 위우이위위우이 높이 지정하고 오버플로우 히든해주어어어*/
+
+
+
+.gnb ul{
+    background: rgba(221, 160, 221, 0.695);
+}
+
+.gnb>li>a{
+    border:1px solid green;
+    display: flex;
+    height:50px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.depui{
+    /* border:1px solid violet; */
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.depui:before{
+    content: "";
+    /* border:1px solid red; */
+    background: black;
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.depui:after{
+    content: "";
+    background: black;
+    left:9px;
+    top:0;
+    width:1px;
+    height: 20px;
+    position: absolute;
+
+}
+
+.gnb>li.on .depui:after{
+    display: none;
+}
+
+
+.gnb ul>li{
+    border:1px solid green;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+

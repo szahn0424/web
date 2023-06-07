@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{margin:0;padding:0;border:1px solid red;}
+        .parent{display:flex;align-items:stretch;flex-wrap: wrap;}
+        section{width:calc(100%/2); box-sizing: border-box; background:ivory}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <section>a</section>
+        <section>b</section>
+        <section>
+            <h2>c</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique enim sed ipsa facere. Unde quae eos magni dolore amet fugit adipisci dicta necessitatibus delectus esse! In, aliquam rem? At.</p>
+        </section>
+        <section>d</section>
+        <section>e</section>
+        <section>f</section>
+    </div>
+</body>
+</html>

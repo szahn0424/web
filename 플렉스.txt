@@ -1,0 +1,3 @@
+display:flex
+justify-content:center;(between....) - x축 정렬
+align-items:stretch(flex-start/flex-end....) - y축 정렬

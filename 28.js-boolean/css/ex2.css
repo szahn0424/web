@@ -1,0 +1,13 @@
+table{border-collapse: collapse;}
+
+.stl{
+width:500px;
+margin: 0 auto;
+text-align: center;}
+
+.stl th{border:1px solid black;padding: 5px 0;border-left: none;}
+.stl td{border:1px solid black;padding: 5px 0;border-right: none;}
+.stl tr:last-of-type>th{background: black; color: white;}
+.stl tr:last-of-type>td{background: black; color: white;}
+
+.stl>caption{font-size: 2rem; font-weight: bold;}

@@ -1,0 +1,66 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+body{margin: 0 100px;}
+
+.boxa{border:1px solid red;
+width:200px; height:200px; margin:50px auto;}
+
+@keyframes suzyrotate{
+    0%{transform: rotate(0deg);}
+    25%{border-radius: 50%;}
+    50%{background: red;}
+    100%{transform: rotate(360deg);}    
+}
+
+.boxa{
+/* 
+    animation-name: suzyrotate;
+    animation-duration: 1s;
+    animation-timing-function: liner;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-direction: normal; */
+    animation:suzyrotate 1s linear 0s infinite;
+
+}
+
+@keyframes susuzy{
+    0%{transform:translate(0%, 0%)}
+    25%{transform:translateX(100%)}
+    50%{transform:translate(100%, 100%)}
+    70%{transform:translate(0%, 100%);}
+    100%{transform:translate(0%0 0%);}       
+}
+
+
+.boxb{
+    animation-name: susuzy;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;}
+
+
+
+.boxb:hover{animation-play-state: paused;
+background: red; border-radius: 50%;}
+
+
+
+.boxb{
+    width:400px; height:400px;
+    background: blue; 
+}
+
+.spantag{position:fixed; border:1px solid red;
+right:0, top:0;transition:all 0.5s ease 0s; width:200px; height:200px;}
+
+.spantag:hover{transform:rotate(90deg);}

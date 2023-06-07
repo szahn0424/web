@@ -1,0 +1,103 @@
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+img{max-width:100%;
+/* 선택한 태그의 너비의 최대값을 지정 */}
+.station{
+    width:100%;
+    height:1000px;
+    /* border:10px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.train{
+    width:400%;
+    height:100%;
+    display: flex;
+    transition: all 1s ease 0s;
+}
+
+.train>li{
+    border:1px solid violet;
+    flex:1;
+    position: relative;
+}
+
+.train>li img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    /* filter: brightness(0.4); */
+}
+
+.controler{
+    border:1px solid red;
+    padding:10px 0;
+    text-align: center;
+}
+
+.slideTxt{
+    /* border:1px solid lightgreen; */
+    width:1200px;
+    position: absolute;
+    left: 50%; top:calc(50% + 80px);
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    color:white;
+    font-size: 3rem;
+    padding-right: 600px;
+    box-sizing:border-box;
+    transition: all 1.5s ease 0s;
+    opacity: 0;
+    /* transform: translateY(30px); */
+}
+
+.slideTxt p{
+    font-size:0.4em;
+}
+.train>li.on .slideTxt{
+    top:50%;
+    opacity: 1;
+}
+
+.train>li:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #00ff004f 28px, #ff000085 77%, #00ffff8c);
+    /* z-index: 100; */
+    left: 0;
+    top: 0;
+
+
+}
+
+.pagination{
+    position: absolute;
+
+    left:50%;
+    bottom:50px;
+    color:white;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.pagination>li{
+    border: 1px solid blue;
+    background: aqua;
+    font-size: 0;
+    width:10px;
+    height:10px;
+    margin-right:5px;
+    border-radius: 50%;
+    opacity: 40%;
+}
+
+.pagination>li.on{
+    background: aqua;
+    opacity: 100%;
+}
+
+.pagination>li:last-of-type{margin-right: 0;}

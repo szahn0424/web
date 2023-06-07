@@ -1,0 +1,43 @@
+/* 리쎗 */
+*{margin: 0; padding: 0;}
+h1,h2,h3,h4.h5,h6{font-size:inherit;font-weight: normal;}
+b,strong{font-weight: normal;}
+i,em,address{font-style: normal;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+/* 리쎗 끗 */
+
+header{border:1px solid red;
+    position: fixed;left: 0;top: 0;
+    width:100%; display:flex;justify-content:space-around;height:100px; background: white;
+align-items: flex-start;overflow: hidden;
+transition: all 0.5s ease 0s;}
+
+header:hover{height: 268px;}
+
+header>*{border:1px solid blue;}
+
+.gnb{display: flex;height:100px;}
+
+.gnb>li{border:1px solid green;
+text-align: center;width:150px;display:flex;
+align-items: center; justify-content: center;
+position:relative}
+
+.gnb>li>ul{border:1px solid red;
+position: absolute;
+left: 0; top:100px;
+width:100%;}
+
+.gnb>li>ul>li{padding: 10px 0;}
+
+
+
+
+.banner{
+    width:100%; 
+    height:700px;
+    border:1px solid red;
+}
+
+.banner img{width:100%;height:100%; object-fit: cover;}

@@ -1,0 +1,27 @@
+데이터형태(데이터타입/자료구조)
+
+스트링"" `` ''
+넘버 12
+불린 true/false
+어레이 ["정현진", "정민진"]
+오브젝트{key.value,key2:function(){}}
+펑션
+function 함수명(){}
+let함수명 = function(){}
+let함수명 =()=>{}
+
+문법구문
+조건문 if(){}
+if(){}else{}
+if(){}else if(){}else if(){}else{}
+반복문
+while(){}
+반복변수/변수증감식/반복조건
+for(let i=0; i<a; i++){}
+
+연산방법(계산방법)
++-*/%
+a++
+a+=1
+a!=b
+a?b:c
